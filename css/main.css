@@ -1,0 +1,79 @@
+
+/* global */
+@charset "UTF-8";
+
+html {
+  height: 100%;
+}
+
+body{ 
+  padding-top: 90px; 
+  text-align: center;
+  font-family: 'kaelia';
+  height: 100%;
+}
+
+.logo {
+  position: relative;
+  }
+
+.logo h1{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  }
+
+.logo img {
+  width: 100%;
+  }
+
+.button {
+  margin-top: 50px;
+}
+
+.btn--black,
+a.btn--black {
+  color: #fff;
+  background-color: black;
+  max-width: 220px;
+  padding: 10px 25px;
+  text-decoration: none;
+}
+.btn--black:hover,
+a.btn--black:hover {
+  color: #fff;
+  background: #444444;
+}
+
+a.btn--radius {
+    border-radius: 10px;
+}
+
+
+/* contact page */
+.contact {
+margin-bottom: 50px;
+}
+.cp_iptxt {
+	position: relative;
+	margin: 100px 30%;
+}
+.cp_iptxt input[type='text'] {
+	font: 15px/24px kaelia;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0.3em;
+	transition: 0.3s;
+	letter-spacing: 1px;
+	color: #aaaaaa;
+	border: 1px solid #1b2538;
+	border-radius: 4px;
+  display: flex;
+  margin: 10px;
+}
+.ef input[type='text']:focus {
+	border: 1px solid #da3c41;
+	outline: none;
+	box-shadow: 0 0 5px 1px rgba(218,60,65, .5);
+}
