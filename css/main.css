@@ -50,6 +50,10 @@ a.btn--radius {
     border-radius: 10px;
 }
 
+.btn--radius {
+  border-radius: 10px;
+  font-family: 'kaelia';
+}
 
 /* contact page */
 .contact {
@@ -77,3 +81,51 @@ margin-bottom: 50px;
 	outline: none;
 	box-shadow: 0 0 5px 1px rgba(218,60,65, .5);
 }
+
+
+/* external_circle_rotation */
+#external_circle {
+  animation: 10s linear infinite clockwise;
+/* 50％は中央、そしてsvgがtransform="translate(-153 -153)"となっているので下記のように描くことにより座標を中央にできる */
+  transform-origin: calc(50% + 153px) calc(50% + 153px);
+}
+
+@keyframes clockwise {
+  0%{transform: rotate(0);}
+  100%{transform: rotate(360deg);}
+
+}
+
+/* center_circle_rotation */
+#center_circle {
+  animation: 13s linear infinite  counterclockwise;
+/* 50％は中央、そしてsvgがtransform="translate(-153 -153)"となっているので下記のように描くことにより座標を中央にできる */
+  transform-origin: calc(50% + 153px) calc(50% + 153px);
+}
+
+@keyframes counterclockwise {
+  0%{transform: rotate(360deg);}
+  100%{transform: rotate(0);}
+
+}
+
+/* inner_circle_rotation */
+#inner_circle {
+  animation: 16s linear infinite  clockwise;
+/* 50％は中央、そしてsvgがtransform="translate(-153 -153)"となっているので下記のように描くことにより座標を中央にできる */
+  transform-origin: calc(50% + 153px) calc(50% + 153px);
+}
+
+@keyframes clockwise {
+  0%{transform: rotate(0);}
+  100%{transform: rotate(360deg);}
+
+}
+
+/* coinflip_effect for JS */
+@keyframes coinflip {
+  0%{transform: rotateX(0);}
+  100%{transform: rotateX(360deg);}
+}
+
+  

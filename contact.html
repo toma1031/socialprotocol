@@ -9,22 +9,22 @@
 </head>
 <body>
   <div class="cp_iptxt">
-    <form>
+    <form action="./welcome.html">
       <h2 class="contact">Contact</h2>
       <div class="name">
         <label for="name">Name</label>
-        <input type="text" id="name" name="name" />
+        <input type="text" id="name" name="name" required/>
       </div>
       <div class="email">
         <label for="email">Email</label>
-        <input type="text" id="email" name="name" />
+        <input type="text" id="email" name="email" required/>
       </div>
       <div class="phone">
         <label for="phone">Phone Number</label>
-        <input type="text" id="phone" name="name" />
+        <input type="text" id="phone" name="phone" required/>
       </div>
       <div class="button">
-          <a href="./welcome.html" class="btn btn--black btn--radius">Add me</a>
+        <input type="submit" onclick="setcookie()" value="Add me" class="btn btn--black btn--radius">
       </div>
     </form>
   </div>
